@@ -65,5 +65,12 @@ namespace finalprojectbanking
                 MessageBox.Show($"ข้อผิดพลาด: {ex.Message}", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Main mainForm = new Main();
+            mainForm.ShowDialog();
+            this.Hide();
+        }
     }
 }

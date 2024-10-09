@@ -30,8 +30,8 @@
         {
             txtFullname = new TextBox();
             Fullname = new Label();
-            txtPhone = new TextBox();
-            Phone = new Label();
+            txtMoneyDivide = new TextBox();
+            MoneyDivide = new Label();
             txtUsername = new TextBox();
             txtFamily = new TextBox();
             Family = new Label();
@@ -43,8 +43,9 @@
             label1 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            label7 = new Label();
+            txtMoneySumDivide = new TextBox();
+            MoneySumDivide = new Label();
+            print = new Button();
             SuspendLayout();
             // 
             // txtFullname
@@ -65,23 +66,23 @@
             Fullname.TabIndex = 123;
             Fullname.Text = " ชื่อ - นามสกุล";
             // 
-            // txtPhone
+            // txtMoneyDivide
             // 
-            txtPhone.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPhone.Location = new Point(497, 423);
-            txtPhone.Name = "txtPhone";
-            txtPhone.Size = new Size(423, 43);
-            txtPhone.TabIndex = 121;
+            txtMoneyDivide.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMoneyDivide.Location = new Point(497, 423);
+            txtMoneyDivide.Name = "txtMoneyDivide";
+            txtMoneyDivide.Size = new Size(423, 43);
+            txtMoneyDivide.TabIndex = 121;
             // 
-            // Phone
+            // MoneyDivide
             // 
-            Phone.AutoSize = true;
-            Phone.Font = new Font("Segoe UI", 16.2F);
-            Phone.Location = new Point(254, 428);
-            Phone.Name = "Phone";
-            Phone.Size = new Size(237, 38);
-            Phone.TabIndex = 120;
-            Phone.Text = " เงินที่ฝากในรอบ 1 ปี";
+            MoneyDivide.AutoSize = true;
+            MoneyDivide.Font = new Font("Segoe UI", 16.2F);
+            MoneyDivide.Location = new Point(254, 428);
+            MoneyDivide.Name = "MoneyDivide";
+            MoneyDivide.Size = new Size(237, 38);
+            MoneyDivide.TabIndex = 120;
+            MoneyDivide.Text = " เงินที่ฝากในรอบ 1 ปี";
             // 
             // txtUsername
             // 
@@ -185,37 +186,50 @@
             label6.TabIndex = 128;
             label6.Text = "บาท(ร้อยละ 4) ";
             // 
-            // textBox1
+            // txtMoneySumDivide
             // 
-            textBox1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(497, 523);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(423, 43);
-            textBox1.TabIndex = 127;
+            txtMoneySumDivide.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMoneySumDivide.Location = new Point(497, 523);
+            txtMoneySumDivide.Name = "txtMoneySumDivide";
+            txtMoneySumDivide.Size = new Size(423, 43);
+            txtMoneySumDivide.TabIndex = 127;
             // 
-            // label7
+            // MoneySumDivide
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 16.2F);
-            label7.Location = new Point(254, 523);
-            label7.Name = "label7";
-            label7.Size = new Size(199, 38);
-            label7.TabIndex = 126;
-            label7.Text = " จำนวนเงินปันผล";
+            MoneySumDivide.AutoSize = true;
+            MoneySumDivide.Font = new Font("Segoe UI", 16.2F);
+            MoneySumDivide.Location = new Point(254, 523);
+            MoneySumDivide.Name = "MoneySumDivide";
+            MoneySumDivide.Size = new Size(199, 38);
+            MoneySumDivide.TabIndex = 126;
+            MoneySumDivide.Text = " จำนวนเงินปันผล";
+            // 
+            // print
+            // 
+            print.ForeColor = SystemColors.ActiveCaptionText;
+            print.Location = new Point(784, 646);
+            print.Name = "print";
+            print.Size = new Size(192, 56);
+            print.TabIndex = 129;
+            print.Text = "button1";
+            print.UseVisualStyleBackColor = true;
+            print.Click += print_Click;
             // 
             // AdminDivUser
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(print);
             Controls.Add(label6);
-            Controls.Add(textBox1);
-            Controls.Add(label7);
+            Controls.Add(txtMoneySumDivide);
+            Controls.Add(MoneySumDivide);
             Controls.Add(label5);
             Controls.Add(txtFullname);
             Controls.Add(Fullname);
-            Controls.Add(txtPhone);
-            Controls.Add(Phone);
+            Controls.Add(txtMoneyDivide);
+            Controls.Add(MoneyDivide);
             Controls.Add(txtUsername);
             Controls.Add(txtFamily);
             Controls.Add(Family);
@@ -225,8 +239,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ControlLightLight;
             Name = "AdminDivUser";
             Text = "AdminDivUser";
+            Load += AdminDivUser_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -235,8 +251,8 @@
 
         private TextBox txtFullname;
         private Label Fullname;
-        private TextBox txtPhone;
-        private Label Phone;
+        private TextBox txtMoneyDivide;
+        private Label MoneyDivide;
         private TextBox txtUsername;
         private TextBox txtFamily;
         private Label Family;
@@ -248,7 +264,8 @@
         private Label label1;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private Label label7;
+        private TextBox txtMoneySumDivide;
+        private Label MoneySumDivide;
+        private Button print;
     }
 }

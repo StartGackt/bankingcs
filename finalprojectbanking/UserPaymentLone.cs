@@ -12,10 +12,11 @@ namespace finalprojectbanking
             InitializeComponent();
             txtUsername.TextChanged += TxtUsername_TextChanged;
             txtNuneycetegory.TextChanged += txtNuneycetegory_TextChanged;
-            
+            txtTotalUserPay.TextChanged += txtUserPay_TextChanged;
+
         }
 
-       
+
 
         private readonly dbcontext _dbContext = new dbcontext();
         private string currentUsername; // Store the currently active username
@@ -175,7 +176,114 @@ namespace finalprojectbanking
         private void txtUserPay_TextChanged(object sender, EventArgs e)
         {
             // fix to cal paymext user 
+            if (decimal.TryParse(txtMoneyFirst.Text, out decimal moneyFirst) &&
+               decimal.TryParse(txtInterest.Text, out decimal interest) &&
+               decimal.TryParse(txtUserPay.Text, out decimal userPay))
+            {
+                decimal totalAmount = moneyFirst + interest;
+                decimal remainingAmount = totalAmount - userPay;
+                txtTotalUserPay.Text = remainingAmount.ToString("F2");
+            }
+            else
+            {
+                MessageBox.Show("กรุณากรอกข้อมูลที่ถูกต้อง", "ข้อมูลไม่ครบ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
-    }
-}
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Check loan type and convert to int
+                int category = 0;
+                if (txtNuneycetegory.Text == "กู้สามัญ")
+                {
+                    category = 1; // Assume 1 is for regular loan
+                }
+                else if (txtNuneycetegory.Text == "กู้ฉุกเฉิน")
+                {
+                    category = 2; // Assume 2 is for emergency loan
+                }
+                else
+                {
+                    MessageBox.Show("ประเภทการกู้ไม่ถูกต้อง", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // Stop execution if loan type is invalid
+                }
+
+                // Create a new Payment object
+                var newpay = new UserPayment
+                {
+                    Username = txtUsername.Text,
+                    Family = txtFamily.Text,
+                    IdCard = txtIdCard.Text,
+                    Phone = txtPhone.Text,
+                    Fullname = txtFullname.Text,
+                    Nuneycetegory = category,
+                    NumberLone = txtNumberLone.Text,
+                    LoneMoney = decimal.Parse(txtLoneMoney.Text),
+                    MoneyFirst = (int)Math.Round(decimal.Parse(txtMoneyFirst.Text)),
+                    Interest = (int)Math.Round(decimal.Parse(txtInterest.Text)),
+                    UserPay = decimal.Parse(txtUserPay.Text),
+                    TotalUserPay = decimal.Parse(txtTotalUserPay.Text)
+                };
+
+                // Add payment data to the database
+                _dbContext.UserPayments.Add(newpay);
+                _dbContext.SaveChanges();
+
+                decimal remainingAmount = newpay.LoneMoney - newpay.UserPay;
+                txtLoneMoney.Text = remainingAmount.ToString();
+
+                MessageBox.Show("บันทึกข้อมูลสำเร็จ", "สำเร็จ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                // Log the inner exception for more details
+                ShowError(ex.InnerException ?? ex);
+            }
+        }
+
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // ค้นหาจาก Username ที่กรอกใน txtUsername
+                string username = txtUsername.Text;
+                var payment = _dbContext.UserPayments.FirstOrDefault(p => p.Username == username);
+
+                if (payment != null)
+                {
+                    // ถ้าพบข้อมูลการกู้ยืม ให้แสดงข้อมูลใน TextBox
+                    txtFamily.Text = payment.Family;
+                    txtIdCard.Text = payment.IdCard;
+                    txtPhone.Text = payment.Phone;
+                    txtFullname.Text = payment.Fullname;
+                    txtNuneycetegory.Text = (payment.Nuneycetegory == 1) ? "กู้สามัญ" : "กู้ฉุกเฉิน";
+                    txtLoneMoney.Text = payment.LoneMoney.ToString();
+                    txtMoneyFirst.Text = payment.MoneyFirst.ToString();
+                    txtInterest.Text = payment.Interest.ToString();
+                    txtUserPay.Text = payment.UserPay.ToString();
+                    txtTotalUserPay.Text = payment.TotalUserPay.ToString();
+                }
+                else
+                {
+                    // ถ้าไม่พบข้อมูล ให้แสดงข้อความแจ้งเตือน
+                    MessageBox.Show("ไม่พบข้อมูลการกู้ยืมของผู้ใช้นี้", "ไม่พบข้อมูล", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle error and display a friendly message
+                MessageBox.Show("เกิดข้อผิดพลาดในการค้นหาข้อมูล: " + ex.Message, "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        }
+} 
+ 
+

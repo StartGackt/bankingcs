@@ -15,7 +15,7 @@ namespace finalprojectbanking.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
             modelBuilder.Entity("finalprojectbanking.Model.AdminRegister", b =>
                 {
@@ -416,6 +416,59 @@ namespace finalprojectbanking.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("finalprojectbanking.Model.UserPayment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Family")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Fullname")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("IdCard")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Interest")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("LoneMoney")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("MoneyFirst")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NumberLone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Nuneycetegory")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalUserPay")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("UserPay")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserPayments");
                 });
 #pragma warning restore 612, 618
         }

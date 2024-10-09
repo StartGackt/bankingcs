@@ -44,12 +44,10 @@
             label2 = new Label();
             label1 = new Label();
             MoneyFirst = new Label();
-            dateTimePicker2 = new DateTimePicker();
             txtUserPay = new TextBox();
             UserPay = new Label();
             TotalUserPay = new Label();
             label18 = new Label();
-            label17 = new Label();
             txtInterest = new TextBox();
             Interest = new Label();
             txtNumberLone = new TextBox();
@@ -63,6 +61,9 @@
             txtLoneMoney = new TextBox();
             LoneMoney = new Label();
             txtNuneycetegory = new TextBox();
+            btnsave = new Button();
+            btnedit = new Button();
+            btnsearch = new Button();
             SuspendLayout();
             // 
             // txtFullname
@@ -77,6 +78,7 @@
             // 
             Fullname.AutoSize = true;
             Fullname.Font = new Font("Segoe UI", 16.2F);
+            Fullname.ForeColor = SystemColors.ButtonHighlight;
             Fullname.Location = new Point(99, 366);
             Fullname.Name = "Fullname";
             Fullname.Size = new Size(176, 38);
@@ -103,6 +105,7 @@
             // 
             Phone.AutoSize = true;
             Phone.Font = new Font("Segoe UI", 16.2F);
+            Phone.ForeColor = SystemColors.ButtonHighlight;
             Phone.Location = new Point(859, 279);
             Phone.Name = "Phone";
             Phone.Size = new Size(167, 38);
@@ -113,6 +116,7 @@
             // 
             IdCard.AutoSize = true;
             IdCard.Font = new Font("Segoe UI", 16.2F);
+            IdCard.ForeColor = SystemColors.ButtonHighlight;
             IdCard.Location = new Point(95, 279);
             IdCard.Name = "IdCard";
             IdCard.Size = new Size(260, 38);
@@ -139,6 +143,7 @@
             // 
             Family.AutoSize = true;
             Family.Font = new Font("Segoe UI", 16.2F);
+            Family.ForeColor = SystemColors.ButtonHighlight;
             Family.Location = new Point(859, 205);
             Family.Name = "Family";
             Family.Size = new Size(161, 38);
@@ -149,6 +154,7 @@
             // 
             Username.AutoSize = true;
             Username.Font = new Font("Segoe UI", 16.2F);
+            Username.ForeColor = SystemColors.ButtonHighlight;
             Username.Location = new Point(95, 205);
             Username.Name = "Username";
             Username.Size = new Size(166, 38);
@@ -158,6 +164,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(1735, 33);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
@@ -175,6 +182,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(680, 138);
             label3.Name = "label3";
             label3.Size = new Size(561, 41);
@@ -185,6 +193,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(630, 76);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -195,6 +204,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(611, 33);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -205,18 +215,12 @@
             // 
             MoneyFirst.AutoSize = true;
             MoneyFirst.Font = new Font("Segoe UI", 16.2F);
+            MoneyFirst.ForeColor = SystemColors.ButtonHighlight;
             MoneyFirst.Location = new Point(121, 689);
             MoneyFirst.Name = "MoneyFirst";
             MoneyFirst.Size = new Size(133, 38);
             MoneyFirst.TabIndex = 123;
             MoneyFirst.Text = " เป็นเงินต้น";
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Location = new Point(339, 891);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(250, 27);
-            dateTimePicker2.TabIndex = 121;
             // 
             // txtUserPay
             // 
@@ -231,6 +235,7 @@
             // 
             UserPay.AutoSize = true;
             UserPay.Font = new Font("Segoe UI", 16.2F);
+            UserPay.ForeColor = SystemColors.ButtonHighlight;
             UserPay.Location = new Point(104, 797);
             UserPay.Name = "UserPay";
             UserPay.Size = new Size(272, 38);
@@ -241,6 +246,7 @@
             // 
             TotalUserPay.AutoSize = true;
             TotalUserPay.Font = new Font("Segoe UI", 16.2F);
+            TotalUserPay.ForeColor = SystemColors.ButtonHighlight;
             TotalUserPay.Location = new Point(951, 797);
             TotalUserPay.Name = "TotalUserPay";
             TotalUserPay.Size = new Size(248, 38);
@@ -251,21 +257,12 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 16.2F);
+            label18.ForeColor = SystemColors.ButtonHighlight;
             label18.Location = new Point(757, 803);
             label18.Name = "label18";
             label18.Size = new Size(63, 38);
             label18.TabIndex = 117;
             label18.Text = "บาท";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 16.2F);
-            label17.Location = new Point(150, 882);
-            label17.Name = "label17";
-            label17.Size = new Size(116, 38);
-            label17.TabIndex = 116;
-            label17.Text = "ชำระวันที่";
             // 
             // txtInterest
             // 
@@ -279,6 +276,7 @@
             // 
             Interest.AutoSize = true;
             Interest.Font = new Font("Segoe UI", 16.2F);
+            Interest.ForeColor = SystemColors.ButtonHighlight;
             Interest.Location = new Point(905, 694);
             Interest.Name = "Interest";
             Interest.Size = new Size(110, 38);
@@ -297,6 +295,7 @@
             // 
             NumberLone.AutoSize = true;
             NumberLone.Font = new Font("Segoe UI", 16.2F);
+            NumberLone.ForeColor = SystemColors.ButtonHighlight;
             NumberLone.Location = new Point(848, 482);
             NumberLone.Name = "NumberLone";
             NumberLone.Size = new Size(163, 38);
@@ -307,6 +306,7 @@
             // 
             Nuneycetegory.AutoSize = true;
             Nuneycetegory.Font = new Font("Segoe UI", 16.2F);
+            Nuneycetegory.ForeColor = SystemColors.ButtonHighlight;
             Nuneycetegory.Location = new Point(99, 480);
             Nuneycetegory.Name = "Nuneycetegory";
             Nuneycetegory.Size = new Size(147, 38);
@@ -317,6 +317,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16.2F);
+            label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(1452, 696);
             label6.Name = "label6";
             label6.Size = new Size(63, 38);
@@ -335,6 +336,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 16.2F);
+            label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(739, 691);
             label7.Name = "label7";
             label7.Size = new Size(63, 38);
@@ -345,6 +347,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 16.2F);
+            label8.ForeColor = SystemColors.ButtonHighlight;
             label8.Location = new Point(1583, 797);
             label8.Name = "label8";
             label8.Size = new Size(63, 38);
@@ -371,6 +374,7 @@
             // 
             LoneMoney.AutoSize = true;
             LoneMoney.Font = new Font("Segoe UI", 16.2F);
+            LoneMoney.ForeColor = SystemColors.ButtonHighlight;
             LoneMoney.Location = new Point(129, 581);
             LoneMoney.Name = "LoneMoney";
             LoneMoney.Size = new Size(142, 38);
@@ -385,11 +389,45 @@
             txtNuneycetegory.Size = new Size(438, 43);
             txtNuneycetegory.TabIndex = 134;
             // 
+            // btnsave
+            // 
+            btnsave.Location = new Point(466, 920);
+            btnsave.Name = "btnsave";
+            btnsave.Size = new Size(180, 57);
+            btnsave.TabIndex = 135;
+            btnsave.Text = "บันทึก";
+            btnsave.UseVisualStyleBackColor = true;
+            btnsave.Click += btnsave_Click;
+            // 
+            // btnedit
+            // 
+            btnedit.Location = new Point(725, 920);
+            btnedit.Name = "btnedit";
+            btnedit.Size = new Size(180, 57);
+            btnedit.TabIndex = 136;
+            btnedit.Text = "แก้ไข";
+            btnedit.UseVisualStyleBackColor = true;
+            btnedit.Click += btnedit_Click;
+            // 
+            // btnsearch
+            // 
+            btnsearch.Location = new Point(997, 920);
+            btnsearch.Name = "btnsearch";
+            btnsearch.Size = new Size(180, 57);
+            btnsearch.TabIndex = 137;
+            btnsearch.Text = "ค้นหา";
+            btnsearch.UseVisualStyleBackColor = true;
+            btnsearch.Click += btnsearch_Click;
+            // 
             // UserPaymentLone
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(btnsearch);
+            Controls.Add(btnedit);
+            Controls.Add(btnsave);
             Controls.Add(txtNuneycetegory);
             Controls.Add(txtLoneMoney);
             Controls.Add(LoneMoney);
@@ -399,12 +437,10 @@
             Controls.Add(txtMoneyFirst);
             Controls.Add(label6);
             Controls.Add(MoneyFirst);
-            Controls.Add(dateTimePicker2);
             Controls.Add(txtUserPay);
             Controls.Add(UserPay);
             Controls.Add(TotalUserPay);
             Controls.Add(label18);
-            Controls.Add(label17);
             Controls.Add(txtInterest);
             Controls.Add(Interest);
             Controls.Add(txtNumberLone);
@@ -425,6 +461,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ButtonHighlight;
             Name = "UserPaymentLone";
             Text = "UserPaymentLone";
             Load += UserPaymentLone_Load;
@@ -450,12 +487,10 @@
         private Label label2;
         private Label label1;
         private Label MoneyFirst;
-        private DateTimePicker dateTimePicker2;
         private TextBox txtUserPay;
         private Label UserPay;
         private Label TotalUserPay;
         private Label label18;
-        private Label label17;
         private TextBox txtInterest;
         private Label Interest;
         private TextBox txtNumberLone;
@@ -470,5 +505,8 @@
         private TextBox txtLoneMoney;
         private Label LoneMoney;
         private TextBox txtNuneycetegory;
+        private Button btnsave;
+        private Button btnedit;
+        private Button btnsearch;
     }
 }

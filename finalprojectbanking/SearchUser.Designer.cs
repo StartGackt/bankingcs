@@ -41,6 +41,7 @@
             // 
             search.AutoSize = true;
             search.Font = new Font("Segoe UI", 18F);
+            search.ForeColor = SystemColors.ButtonHighlight;
             search.Location = new Point(425, 260);
             search.Name = "search";
             search.Size = new Size(160, 41);
@@ -51,6 +52,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(661, 162);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -61,6 +63,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(608, 116);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -77,6 +80,7 @@
             // 
             // btnSearch
             // 
+            btnSearch.ForeColor = SystemColors.Desktop;
             btnSearch.Location = new Point(1335, 260);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(116, 41);
@@ -99,6 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(dataGridView1);
             Controls.Add(btnSearch);
@@ -106,6 +111,7 @@
             Controls.Add(search);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ButtonHighlight;
             Name = "SearchUser";
             Text = "SearchUser";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

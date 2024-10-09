@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.Sqlite;
+using finalprojectbanking.Model;
+
 
 namespace finalprojectbanking.Model
 {
@@ -11,7 +14,7 @@ namespace finalprojectbanking.Model
     {
        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = C:\Users\Thest\Desktop\finalprojectbanking\DB\finalprojectbankingDB.db");
+            optionsBuilder.UseSqlite(@"Data Source=C:\Users\Thest\source\repos\bankingcs\finalprojectbankingDB.db");
             optionsBuilder.EnableSensitiveDataLogging();
         }
 
@@ -21,7 +24,8 @@ namespace finalprojectbanking.Model
         public DbSet<OrdLone> OrdLones { get; set; }
         public DbSet<EditOraLone> EditOraLones { get; set; }
         public DbSet<Emer> Emers { get; set; }
-     
-
+        public DbSet<UserPayment> UserPayments { get; set; }
+        public DbSet<UserExit> UserExits { get; set; }
+       
     }
 }

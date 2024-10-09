@@ -33,11 +33,11 @@
             label3 = new Label();
             button1 = new Button();
             dateTimePicker1 = new DateTimePicker();
-            label4 = new Label();
             Username = new Label();
             Password = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -73,7 +73,8 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(867, 671);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(728, 649);
             button1.Name = "button1";
             button1.Size = new Size(184, 62);
             button1.TabIndex = 3;
@@ -83,19 +84,10 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(1626, 109);
+            dateTimePicker1.Location = new Point(1640, 95);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 4;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(1717, 73);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 5;
-            label4.Text = "label4";
             // 
             // Username
             // 
@@ -128,26 +120,40 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(751, 532);
+            txtPassword.Location = new Point(751, 545);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(574, 43);
             txtPassword.TabIndex = 9;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(1114, 649);
+            button2.Name = "button2";
+            button2.Size = new Size(184, 62);
+            button2.TabIndex = 10;
+            button2.Text = "เข้าสู่ระบบ";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(button2);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(Password);
             Controls.Add(Username);
-            Controls.Add(label4);
             Controls.Add(dateTimePicker1);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = Color.White;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -162,10 +168,10 @@
         private Label label3;
         private Button button1;
         private DateTimePicker dateTimePicker1;
-        private Label label4;
         private Label Username;
         private Label Password;
         private TextBox txtUsername;
         private TextBox txtPassword;
+        private Button button2;
     }
 }

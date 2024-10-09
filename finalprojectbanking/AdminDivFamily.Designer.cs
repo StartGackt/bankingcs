@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtUsername = new TextBox();
+            txtSumMoney = new TextBox();
             txtFamily = new TextBox();
             Family = new Label();
-            Username = new Label();
+            SumDividend = new Label();
             label4 = new Label();
             dateTimePicker1 = new DateTimePicker();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            dataGridView1 = new DataGridView();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            label7 = new Label();
-            textBox2 = new TextBox();
-            label8 = new Label();
+            txtMoneyDivide = new TextBox();
+            MoneyDivide = new Label();
+            print = new Button();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // txtUsername
+            // txtSumMoney
             // 
-            txtUsername.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(480, 717);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(522, 43);
-            txtUsername.TabIndex = 127;
+            txtSumMoney.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSumMoney.Location = new Point(678, 703);
+            txtSumMoney.Name = "txtSumMoney";
+            txtSumMoney.Size = new Size(522, 43);
+            txtSumMoney.TabIndex = 127;
             // 
             // txtFamily
             // 
@@ -73,15 +72,15 @@
             Family.TabIndex = 125;
             Family.Text = "รหัสครอบครัว";
             // 
-            // Username
+            // SumDividend
             // 
-            Username.AutoSize = true;
-            Username.Font = new Font("Segoe UI", 16.2F);
-            Username.Location = new Point(113, 717);
-            Username.Name = "Username";
-            Username.Size = new Size(361, 38);
-            Username.TabIndex = 124;
-            Username.Text = " รวมจำนวนเงินฝากรายครอบครัว";
+            SumDividend.AutoSize = true;
+            SumDividend.Font = new Font("Segoe UI", 16.2F);
+            SumDividend.Location = new Point(311, 703);
+            SumDividend.Name = "SumDividend";
+            SumDividend.Size = new Size(361, 38);
+            SumDividend.TabIndex = 124;
+            SumDividend.Text = " รวมจำนวนเงินฝากรายครอบครัว";
             // 
             // label4
             // 
@@ -129,20 +128,11 @@
             label1.TabIndex = 119;
             label1.Text = "ระบบบริหารจัดการกลุ่มออมทรัพย์เพื่อการผลิตบ้านท่ารวก ";
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(252, 267);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1560, 406);
-            dataGridView1.TabIndex = 128;
-            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 16.2F);
-            label5.Location = new Point(1021, 717);
+            label5.Location = new Point(1219, 703);
             label5.Name = "label5";
             label5.Size = new Size(63, 38);
             label5.TabIndex = 129;
@@ -152,71 +142,76 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16.2F);
-            label6.Location = new Point(945, 791);
+            label6.Location = new Point(1143, 777);
             label6.Name = "label6";
             label6.Size = new Size(177, 38);
             label6.TabIndex = 132;
             label6.Text = "บาท(ร้อยละ 4) ";
             // 
-            // textBox1
+            // txtMoneyDivide
             // 
-            textBox1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(480, 788);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(423, 43);
-            textBox1.TabIndex = 131;
+            txtMoneyDivide.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMoneyDivide.Location = new Point(678, 774);
+            txtMoneyDivide.Name = "txtMoneyDivide";
+            txtMoneyDivide.Size = new Size(423, 43);
+            txtMoneyDivide.TabIndex = 131;
             // 
-            // label7
+            // MoneyDivide
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 16.2F);
-            label7.Location = new Point(237, 788);
-            label7.Name = "label7";
-            label7.Size = new Size(199, 38);
-            label7.TabIndex = 130;
-            label7.Text = " จำนวนเงินปันผล";
+            MoneyDivide.AutoSize = true;
+            MoneyDivide.Font = new Font("Segoe UI", 16.2F);
+            MoneyDivide.Location = new Point(435, 774);
+            MoneyDivide.Name = "MoneyDivide";
+            MoneyDivide.Size = new Size(199, 38);
+            MoneyDivide.TabIndex = 130;
+            MoneyDivide.Text = " จำนวนเงินปันผล";
             // 
-            // textBox2
+            // print
             // 
-            textBox2.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(400, 872);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(423, 43);
-            textBox2.TabIndex = 134;
+            print.ForeColor = SystemColors.ControlText;
+            print.Location = new Point(872, 878);
+            print.Name = "print";
+            print.Size = new Size(192, 56);
+            print.TabIndex = 133;
+            print.Text = "button1";
+            print.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // dataGridView1
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 16.2F);
-            label8.Location = new Point(237, 877);
-            label8.Name = "label8";
-            label8.Size = new Size(97, 38);
-            label8.TabIndex = 133;
-            label8.Text = "ณ วันที่";
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.GridColor = SystemColors.WindowText;
+            dataGridView1.Location = new Point(172, 290);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1599, 389);
+            dataGridView1.TabIndex = 134;
+          
             // 
             // AdminDivFamily
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
-            Controls.Add(textBox2);
-            Controls.Add(label8);
-            Controls.Add(label6);
-            Controls.Add(textBox1);
-            Controls.Add(label7);
-            Controls.Add(label5);
             Controls.Add(dataGridView1);
-            Controls.Add(txtUsername);
+            Controls.Add(print);
+            Controls.Add(label6);
+            Controls.Add(txtMoneyDivide);
+            Controls.Add(MoneyDivide);
+            Controls.Add(label5);
+            Controls.Add(txtSumMoney);
             Controls.Add(txtFamily);
             Controls.Add(Family);
-            Controls.Add(Username);
+            Controls.Add(SumDividend);
             Controls.Add(label4);
             Controls.Add(dateTimePicker1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ButtonHighlight;
             Name = "AdminDivFamily";
             Text = "AdminDivFamily";
+            Load += AdminDivFamily_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -224,21 +219,20 @@
 
         #endregion
 
-        private TextBox txtUsername;
+        private TextBox txtSumMoney;
         private TextBox txtFamily;
         private Label Family;
-        private Label Username;
+        private Label SumDividend;
         private Label label4;
         private DateTimePicker dateTimePicker1;
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridView dataGridView1;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private Label label7;
-        private TextBox textBox2;
-        private Label label8;
+        private TextBox txtMoneyDivide;
+        private Label MoneyDivide;
+        private Button print;
+        private DataGridView dataGridView1;
     }
 }

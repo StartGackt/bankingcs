@@ -46,6 +46,7 @@
             button3.TabIndex = 25;
             button3.Text = "รายงานการกู้เงินประจำเดือน (เงินกู้ฉุกเฉิน) ";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -55,6 +56,7 @@
             button2.TabIndex = 24;
             button2.Text = "รายงานการฝากเงินสัจจะออมทรัพย์ประจำปี ";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -64,11 +66,13 @@
             button1.TabIndex = 23;
             button1.Text = "รายงานการฝากเงินสัจจะออมทรัพย์ประจำเดือน ";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(698, 170);
             label3.Name = "label3";
             label3.Size = new Size(540, 41);
@@ -79,6 +83,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(672, 96);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -89,6 +94,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(649, 55);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -103,6 +109,7 @@
             button7.TabIndex = 30;
             button7.Text = "ทะเบียนคุมลูกหนี้เงินกู้ ";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -112,11 +119,13 @@
             button8.TabIndex = 29;
             button8.Text = "รายงานการกู้เงินประจำปี (เงินกู้สามัญ)";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // MainAdminReport
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(button7);
             Controls.Add(button8);
