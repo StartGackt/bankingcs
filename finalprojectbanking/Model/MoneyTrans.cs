@@ -17,7 +17,9 @@ namespace finalprojectbanking.Model
         public decimal MoneyOld { get; set; } 
         public decimal MoneyLast { get; set; } 
         public decimal MoneyTotal { get; set; } 
-        public DateTime TimeMoney { get; set; } 
+        public DateTime TimeMoney { get; set; }
+      
+
 
 
     }

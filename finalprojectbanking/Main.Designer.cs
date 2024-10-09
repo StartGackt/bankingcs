@@ -68,6 +68,7 @@
             // 
             // button1
             // 
+            button1.ForeColor = SystemColors.ControlText;
             button1.Location = new Point(730, 307);
             button1.Name = "button1";
             button1.Size = new Size(432, 60);
@@ -78,6 +79,7 @@
             // 
             // button2
             // 
+            button2.ForeColor = SystemColors.Desktop;
             button2.Location = new Point(730, 399);
             button2.Name = "button2";
             button2.Size = new Size(432, 60);
@@ -88,6 +90,7 @@
             // 
             // button3
             // 
+            button3.ForeColor = SystemColors.ControlText;
             button3.Location = new Point(730, 504);
             button3.Name = "button3";
             button3.Size = new Size(432, 60);
@@ -100,6 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -107,6 +111,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ControlLightLight;
             Name = "Main";
             Text = "Main";
             ResumeLayout(false);

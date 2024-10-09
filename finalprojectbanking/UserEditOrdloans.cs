@@ -130,7 +130,6 @@ namespace finalprojectbanking
                 }
                 else
                 {
-                    // Clear the fields if user is not found
                     foreach (var field in fields)
                     {
                         field.Text = string.Empty;
@@ -289,6 +288,10 @@ namespace finalprojectbanking
             }
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -69,6 +69,7 @@
             // 
             Address.AutoSize = true;
             Address.Font = new Font("Segoe UI", 16.2F);
+            Address.ForeColor = SystemColors.Control;
             Address.Location = new Point(154, 590);
             Address.Name = "Address";
             Address.Size = new Size(72, 38);
@@ -87,6 +88,7 @@
             // 
             Fullname.AutoSize = true;
             Fullname.Font = new Font("Segoe UI", 16.2F);
+            Fullname.ForeColor = SystemColors.Control;
             Fullname.Location = new Point(154, 507);
             Fullname.Name = "Fullname";
             Fullname.Size = new Size(176, 38);
@@ -113,6 +115,7 @@
             // 
             Phone.AutoSize = true;
             Phone.Font = new Font("Segoe UI", 16.2F);
+            Phone.ForeColor = SystemColors.Control;
             Phone.Location = new Point(990, 420);
             Phone.Name = "Phone";
             Phone.Size = new Size(167, 38);
@@ -123,6 +126,7 @@
             // 
             IdCard.AutoSize = true;
             IdCard.Font = new Font("Segoe UI", 16.2F);
+            IdCard.ForeColor = SystemColors.Control;
             IdCard.Location = new Point(154, 420);
             IdCard.Name = "IdCard";
             IdCard.Size = new Size(260, 38);
@@ -149,6 +153,7 @@
             // 
             Family.AutoSize = true;
             Family.Font = new Font("Segoe UI", 16.2F);
+            Family.ForeColor = SystemColors.Control;
             Family.Location = new Point(998, 346);
             Family.Name = "Family";
             Family.Size = new Size(161, 38);
@@ -159,6 +164,7 @@
             // 
             Username.AutoSize = true;
             Username.Font = new Font("Segoe UI", 16.2F);
+            Username.ForeColor = SystemColors.Control;
             Username.Location = new Point(154, 346);
             Username.Name = "Username";
             Username.Size = new Size(166, 38);
@@ -168,6 +174,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.Control;
             label4.Location = new Point(1678, 35);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
@@ -185,6 +192,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(734, 207);
             label3.Name = "label3";
             label3.Size = new Size(432, 41);
@@ -195,6 +203,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(654, 138);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -205,6 +214,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(635, 95);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -223,6 +233,7 @@
             // 
             User1.AutoSize = true;
             User1.Font = new Font("Segoe UI", 16.2F);
+            User1.ForeColor = SystemColors.Control;
             User1.Location = new Point(139, 692);
             User1.Name = "User1";
             User1.Size = new Size(289, 38);
@@ -241,6 +252,7 @@
             // 
             PhoneUser1.AutoSize = true;
             PhoneUser1.Font = new Font("Segoe UI", 16.2F);
+            PhoneUser1.ForeColor = SystemColors.Control;
             PhoneUser1.Location = new Point(1008, 692);
             PhoneUser1.Name = "PhoneUser1";
             PhoneUser1.Size = new Size(167, 38);
@@ -259,6 +271,7 @@
             // 
             PhoneUser2.AutoSize = true;
             PhoneUser2.Font = new Font("Segoe UI", 16.2F);
+            PhoneUser2.ForeColor = SystemColors.Control;
             PhoneUser2.Location = new Point(1008, 764);
             PhoneUser2.Name = "PhoneUser2";
             PhoneUser2.Size = new Size(167, 38);
@@ -277,6 +290,7 @@
             // 
             User2.AutoSize = true;
             User2.Font = new Font("Segoe UI", 16.2F);
+            User2.ForeColor = SystemColors.Control;
             User2.Location = new Point(139, 764);
             User2.Name = "User2";
             User2.Size = new Size(289, 38);
@@ -308,6 +322,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(button2);
             Controls.Add(btnadd);

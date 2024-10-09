@@ -64,6 +64,7 @@
             // 
             Address.AutoSize = true;
             Address.Font = new Font("Segoe UI", 16.2F);
+            Address.ForeColor = SystemColors.ButtonHighlight;
             Address.Location = new Point(198, 586);
             Address.Name = "Address";
             Address.Size = new Size(72, 38);
@@ -82,6 +83,7 @@
             // 
             Fullname.AutoSize = true;
             Fullname.Font = new Font("Segoe UI", 16.2F);
+            Fullname.ForeColor = SystemColors.ButtonHighlight;
             Fullname.Location = new Point(198, 503);
             Fullname.Name = "Fullname";
             Fullname.Size = new Size(176, 38);
@@ -108,6 +110,7 @@
             // 
             Phone.AutoSize = true;
             Phone.Font = new Font("Segoe UI", 16.2F);
+            Phone.ForeColor = SystemColors.ButtonHighlight;
             Phone.Location = new Point(1034, 416);
             Phone.Name = "Phone";
             Phone.Size = new Size(167, 38);
@@ -118,6 +121,7 @@
             // 
             Idcard.AutoSize = true;
             Idcard.Font = new Font("Segoe UI", 16.2F);
+            Idcard.ForeColor = SystemColors.ButtonHighlight;
             Idcard.Location = new Point(198, 416);
             Idcard.Name = "Idcard";
             Idcard.Size = new Size(260, 38);
@@ -144,6 +148,7 @@
             // 
             Password.AutoSize = true;
             Password.Font = new Font("Segoe UI", 16.2F);
+            Password.ForeColor = SystemColors.ButtonHighlight;
             Password.Location = new Point(962, 342);
             Password.Name = "Password";
             Password.Size = new Size(116, 38);
@@ -154,6 +159,7 @@
             // 
             Username.AutoSize = true;
             Username.Font = new Font("Segoe UI", 16.2F);
+            Username.ForeColor = SystemColors.ButtonHighlight;
             Username.Location = new Point(198, 342);
             Username.Name = "Username";
             Username.Size = new Size(143, 38);
@@ -163,6 +169,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(1722, 31);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
@@ -180,6 +187,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(778, 203);
             label3.Name = "label3";
             label3.Size = new Size(597, 41);
@@ -190,6 +198,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(698, 134);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -200,6 +209,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(679, 91);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -210,6 +220,7 @@
             // 
             Time.AutoSize = true;
             Time.Font = new Font("Segoe UI", 16.2F);
+            Time.ForeColor = SystemColors.ButtonHighlight;
             Time.Location = new Point(198, 678);
             Time.Name = "Time";
             Time.Size = new Size(123, 38);
@@ -227,6 +238,7 @@
             // 
             Position.AutoSize = true;
             Position.Font = new Font("Segoe UI", 16.2F);
+            Position.ForeColor = SystemColors.ButtonHighlight;
             Position.Location = new Point(198, 764);
             Position.Name = "Position";
             Position.Size = new Size(105, 38);
@@ -257,6 +269,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(btadd);
             Controls.Add(txtPosition);

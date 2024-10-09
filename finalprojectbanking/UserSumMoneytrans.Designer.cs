@@ -45,8 +45,8 @@
             label4 = new Label();
             label5 = new Label();
             dataGridView1 = new DataGridView();
-            textBox1 = new TextBox();
-            label6 = new Label();
+            txtUsersum = new TextBox();
+            Usersum = new Label();
             label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -63,6 +63,7 @@
             // 
             Fullname.AutoSize = true;
             Fullname.Font = new Font("Segoe UI", 16.2F);
+            Fullname.ForeColor = SystemColors.ButtonFace;
             Fullname.Location = new Point(167, 388);
             Fullname.Name = "Fullname";
             Fullname.Size = new Size(176, 38);
@@ -89,6 +90,7 @@
             // 
             Phone.AutoSize = true;
             Phone.Font = new Font("Segoe UI", 16.2F);
+            Phone.ForeColor = SystemColors.ButtonFace;
             Phone.Location = new Point(897, 293);
             Phone.Name = "Phone";
             Phone.Size = new Size(167, 38);
@@ -99,6 +101,7 @@
             // 
             IdCard.AutoSize = true;
             IdCard.Font = new Font("Segoe UI", 16.2F);
+            IdCard.ForeColor = SystemColors.ButtonFace;
             IdCard.Location = new Point(125, 293);
             IdCard.Name = "IdCard";
             IdCard.Size = new Size(260, 38);
@@ -125,6 +128,7 @@
             // 
             Family.AutoSize = true;
             Family.Font = new Font("Segoe UI", 16.2F);
+            Family.ForeColor = SystemColors.ButtonFace;
             Family.Location = new Point(903, 222);
             Family.Name = "Family";
             Family.Size = new Size(161, 38);
@@ -135,6 +139,7 @@
             // 
             Username.AutoSize = true;
             Username.Font = new Font("Segoe UI", 16.2F);
+            Username.ForeColor = SystemColors.ButtonFace;
             Username.Location = new Point(152, 219);
             Username.Name = "Username";
             Username.Size = new Size(166, 38);
@@ -152,6 +157,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(660, 145);
             label3.Name = "label3";
             label3.Size = new Size(546, 41);
@@ -162,6 +168,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonFace;
             label2.Location = new Point(660, 90);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -172,6 +179,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(641, 47);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -181,6 +189,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(1716, 34);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
@@ -190,6 +199,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = SystemColors.ButtonFace;
             label5.Location = new Point(897, 402);
             label5.Name = "label5";
             label5.Size = new Size(309, 20);
@@ -199,34 +209,38 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.GridColor = SystemColors.WindowText;
             dataGridView1.Location = new Point(167, 500);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1599, 389);
             dataGridView1.TabIndex = 102;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // textBox1
+            // txtUsersum
             // 
-            textBox1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(602, 954);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(522, 43);
-            textBox1.TabIndex = 104;
+            txtUsersum.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsersum.Location = new Point(602, 954);
+            txtUsersum.Name = "txtUsersum";
+            txtUsersum.Size = new Size(522, 43);
+            txtUsersum.TabIndex = 104;
             // 
-            // label6
+            // Usersum
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 16.2F);
-            label6.Location = new Point(420, 954);
-            label6.Name = "label6";
-            label6.Size = new Size(133, 38);
-            label6.TabIndex = 103;
-            label6.Text = "รวมเป็นเงิน";
+            Usersum.AutoSize = true;
+            Usersum.Font = new Font("Segoe UI", 16.2F);
+            Usersum.ForeColor = SystemColors.ButtonHighlight;
+            Usersum.Location = new Point(420, 954);
+            Usersum.Name = "Usersum";
+            Usersum.Size = new Size(133, 38);
+            Usersum.TabIndex = 103;
+            Usersum.Text = "รวมเป็นเงิน";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 16.2F);
+            label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(1155, 959);
             label7.Name = "label7";
             label7.Size = new Size(261, 38);
@@ -237,10 +251,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(label7);
-            Controls.Add(textBox1);
-            Controls.Add(label6);
+            Controls.Add(txtUsersum);
+            Controls.Add(Usersum);
             Controls.Add(dataGridView1);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -260,6 +275,7 @@
             Controls.Add(label1);
             Name = "UserSumMoneytrans";
             Text = "UserSumMoneytrans";
+            Load += UserSumMoneytrans_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -284,8 +300,8 @@
         private Label label4;
         private Label label5;
         private DataGridView dataGridView1;
-        private TextBox textBox1;
-        private Label label6;
+        private TextBox txtUsersum;
+        private Label Usersum;
         private Label label7;
     }
 }

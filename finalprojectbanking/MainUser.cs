@@ -49,7 +49,7 @@ namespace finalprojectbanking
 
         private void button5_Click(object sender, EventArgs e)
         {
-         
+            new UserExit().Show();
         }
     }
 }

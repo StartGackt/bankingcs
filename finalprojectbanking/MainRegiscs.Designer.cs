@@ -59,6 +59,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(872, 196);
             label3.Name = "label3";
             label3.Size = new Size(120, 41);
@@ -69,6 +70,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonFace;
             label2.Location = new Point(638, 125);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -79,6 +81,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(615, 84);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -89,6 +92,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(button2);
             Controls.Add(button1);

@@ -21,5 +21,30 @@ namespace finalprojectbanking
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AdminMonthlysavingsdepositreport().ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new AdminAnnualSavingsDepositReport().ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new AdminMonthlyLoanReport().ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new AdminAnnualLoanReport().ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new AdminLoanDebtorControlRegister().ShowDialog();
+        }
     }
 }

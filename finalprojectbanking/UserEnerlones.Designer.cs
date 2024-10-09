@@ -92,6 +92,7 @@
             // 
             Fullname3.AutoSize = true;
             Fullname3.Font = new Font("Segoe UI", 16.2F);
+            Fullname3.ForeColor = SystemColors.ButtonFace;
             Fullname3.Location = new Point(808, 582);
             Fullname3.Name = "Fullname3";
             Fullname3.Size = new Size(176, 38);
@@ -110,6 +111,7 @@
             // 
             Phone3.AutoSize = true;
             Phone3.Font = new Font("Segoe UI", 16.2F);
+            Phone3.ForeColor = SystemColors.ButtonFace;
             Phone3.Location = new Point(1397, 582);
             Phone3.Name = "Phone3";
             Phone3.Size = new Size(167, 38);
@@ -128,6 +130,7 @@
             // 
             Username3.AutoSize = true;
             Username3.Font = new Font("Segoe UI", 16.2F);
+            Username3.ForeColor = SystemColors.ButtonFace;
             Username3.Location = new Point(38, 582);
             Username3.Name = "Username3";
             Username3.Size = new Size(364, 38);
@@ -146,6 +149,7 @@
             // 
             Fullname2.AutoSize = true;
             Fullname2.Font = new Font("Segoe UI", 16.2F);
+            Fullname2.ForeColor = SystemColors.ButtonFace;
             Fullname2.Location = new Point(808, 518);
             Fullname2.Name = "Fullname2";
             Fullname2.Size = new Size(176, 38);
@@ -164,6 +168,7 @@
             // 
             Phone2.AutoSize = true;
             Phone2.Font = new Font("Segoe UI", 16.2F);
+            Phone2.ForeColor = SystemColors.ButtonFace;
             Phone2.Location = new Point(1397, 518);
             Phone2.Name = "Phone2";
             Phone2.Size = new Size(167, 38);
@@ -182,6 +187,7 @@
             // 
             Username2.AutoSize = true;
             Username2.Font = new Font("Segoe UI", 16.2F);
+            Username2.ForeColor = SystemColors.ButtonFace;
             Username2.Location = new Point(38, 518);
             Username2.Name = "Username2";
             Username2.Size = new Size(364, 38);
@@ -200,6 +206,7 @@
             // 
             Fullname1.AutoSize = true;
             Fullname1.Font = new Font("Segoe UI", 16.2F);
+            Fullname1.ForeColor = SystemColors.ButtonFace;
             Fullname1.Location = new Point(808, 456);
             Fullname1.Name = "Fullname1";
             Fullname1.Size = new Size(176, 38);
@@ -218,6 +225,7 @@
             // 
             Phone1.AutoSize = true;
             Phone1.Font = new Font("Segoe UI", 16.2F);
+            Phone1.ForeColor = SystemColors.ButtonFace;
             Phone1.Location = new Point(1397, 456);
             Phone1.Name = "Phone1";
             Phone1.Size = new Size(167, 38);
@@ -236,6 +244,7 @@
             // 
             Username1.AutoSize = true;
             Username1.Font = new Font("Segoe UI", 16.2F);
+            Username1.ForeColor = SystemColors.ButtonFace;
             Username1.Location = new Point(38, 456);
             Username1.Name = "Username1";
             Username1.Size = new Size(364, 38);
@@ -254,6 +263,7 @@
             // 
             Fullname.AutoSize = true;
             Fullname.Font = new Font("Segoe UI", 16.2F);
+            Fullname.ForeColor = SystemColors.ButtonFace;
             Fullname.Location = new Point(98, 367);
             Fullname.Name = "Fullname";
             Fullname.Size = new Size(176, 38);
@@ -280,6 +290,7 @@
             // 
             Phone.AutoSize = true;
             Phone.Font = new Font("Segoe UI", 16.2F);
+            Phone.ForeColor = SystemColors.ButtonFace;
             Phone.Location = new Point(864, 280);
             Phone.Name = "Phone";
             Phone.Size = new Size(167, 38);
@@ -290,6 +301,7 @@
             // 
             IdCard.AutoSize = true;
             IdCard.Font = new Font("Segoe UI", 16.2F);
+            IdCard.ForeColor = SystemColors.ButtonFace;
             IdCard.Location = new Point(98, 280);
             IdCard.Name = "IdCard";
             IdCard.Size = new Size(260, 38);
@@ -316,6 +328,7 @@
             // 
             Family.AutoSize = true;
             Family.Font = new Font("Segoe UI", 16.2F);
+            Family.ForeColor = SystemColors.ButtonFace;
             Family.Location = new Point(862, 206);
             Family.Name = "Family";
             Family.Size = new Size(161, 38);
@@ -326,6 +339,7 @@
             // 
             Username.AutoSize = true;
             Username.Font = new Font("Segoe UI", 16.2F);
+            Username.ForeColor = SystemColors.ButtonFace;
             Username.Location = new Point(98, 206);
             Username.Name = "Username";
             Username.Size = new Size(166, 38);
@@ -335,6 +349,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(1722, 34);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
@@ -352,6 +367,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F);
+            label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(683, 139);
             label3.Name = "label3";
             label3.Size = new Size(467, 41);
@@ -362,6 +378,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
+            label2.ForeColor = SystemColors.ButtonFace;
             label2.Location = new Point(633, 77);
             label2.Name = "label2";
             label2.Size = new Size(577, 41);
@@ -372,6 +389,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
+            label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(614, 34);
             label1.Name = "label1";
             label1.Size = new Size(664, 41);
@@ -382,6 +400,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 16.2F);
+            label21.ForeColor = SystemColors.ButtonFace;
             label21.Location = new Point(1162, 828);
             label21.Name = "label21";
             label21.Size = new Size(63, 38);
@@ -402,11 +421,13 @@
             txtTotalMoneyLone.Name = "txtTotalMoneyLone";
             txtTotalMoneyLone.Size = new Size(522, 43);
             txtTotalMoneyLone.TabIndex = 138;
+            txtTotalMoneyLone.TextChanged += txtTotalMoneyLone_TextChanged;
             // 
             // TotalMoneyLone
             // 
             TotalMoneyLone.AutoSize = true;
             TotalMoneyLone.Font = new Font("Segoe UI", 16.2F);
+            TotalMoneyLone.ForeColor = SystemColors.ButtonFace;
             TotalMoneyLone.Location = new Point(140, 828);
             TotalMoneyLone.Name = "TotalMoneyLone";
             TotalMoneyLone.Size = new Size(447, 38);
@@ -417,6 +438,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI", 16.2F);
+            label19.ForeColor = SystemColors.ButtonFace;
             label19.Location = new Point(662, 747);
             label19.Name = "label19";
             label19.Size = new Size(271, 38);
@@ -427,6 +449,7 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 16.2F);
+            label18.ForeColor = SystemColors.ButtonFace;
             label18.Location = new Point(683, 677);
             label18.Name = "label18";
             label18.Size = new Size(63, 38);
@@ -437,6 +460,7 @@
             // 
             TimeLone.AutoSize = true;
             TimeLone.Font = new Font("Segoe UI", 16.2F);
+            TimeLone.ForeColor = SystemColors.ButtonFace;
             TimeLone.Location = new Point(1004, 742);
             TimeLone.Name = "TimeLone";
             TimeLone.Size = new Size(136, 38);
@@ -455,6 +479,7 @@
             // 
             LoneMoney.AutoSize = true;
             LoneMoney.Font = new Font("Segoe UI", 16.2F);
+            LoneMoney.ForeColor = SystemColors.ButtonFace;
             LoneMoney.Location = new Point(984, 674);
             LoneMoney.Name = "LoneMoney";
             LoneMoney.Size = new Size(174, 38);
@@ -473,6 +498,7 @@
             // 
             NumberLone.AutoSize = true;
             NumberLone.Font = new Font("Segoe UI", 16.2F);
+            NumberLone.ForeColor = SystemColors.ButtonFace;
             NumberLone.Location = new Point(140, 742);
             NumberLone.Name = "NumberLone";
             NumberLone.Size = new Size(163, 38);
@@ -491,6 +517,7 @@
             // 
             MoneyOld.AutoSize = true;
             MoneyOld.Font = new Font("Segoe UI", 16.2F);
+            MoneyOld.ForeColor = SystemColors.ButtonFace;
             MoneyOld.Location = new Point(140, 674);
             MoneyOld.Name = "MoneyOld";
             MoneyOld.Size = new Size(172, 38);
@@ -500,6 +527,7 @@
             // Edit
             // 
             Edit.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Edit.ForeColor = SystemColors.ActiveCaptionText;
             Edit.Location = new Point(1041, 925);
             Edit.Name = "Edit";
             Edit.Size = new Size(184, 62);
@@ -511,6 +539,7 @@
             // btnsearch
             // 
             btnsearch.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnsearch.ForeColor = SystemColors.ActiveCaptionText;
             btnsearch.Location = new Point(795, 925);
             btnsearch.Name = "btnsearch";
             btnsearch.Size = new Size(184, 62);
@@ -522,6 +551,7 @@
             // btnadd
             // 
             btnadd.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnadd.ForeColor = SystemColors.ActiveCaptionText;
             btnadd.Location = new Point(538, 925);
             btnadd.Name = "btnadd";
             btnadd.Size = new Size(184, 62);
@@ -534,6 +564,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 16.2F);
+            label5.ForeColor = SystemColors.ButtonFace;
             label5.Location = new Point(1597, 677);
             label5.Name = "label5";
             label5.Size = new Size(63, 38);
@@ -544,6 +575,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkGreen;
             ClientSize = new Size(1902, 1033);
             Controls.Add(label5);
             Controls.Add(Edit);
@@ -595,6 +627,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ButtonFace;
             Name = "UserEnerlones";
             Text = "UserEnerlones";
             Load += UserEnerlones_Load;

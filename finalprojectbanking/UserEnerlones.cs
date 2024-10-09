@@ -86,10 +86,6 @@ namespace finalprojectbanking
 
         private void GenerateLoanNumber()
         {
-
-
-
-
             var lastLoan = _dbContext.Emers
                 .OrderByDescending(e => e.NumberLone)
                 .FirstOrDefault();
@@ -110,14 +106,22 @@ namespace finalprojectbanking
 
         private void CalculateTotalMoney()
         {
-            if (decimal.TryParse(txtLoneMoney.Text, out decimal loanAmount))
+            try
             {
-                decimal interest = loanAmount * 0.01m;
-                txtTotalMoneyLone.Text = (loanAmount + interest).ToString("F2");
+                if (decimal.TryParse(txtLoneMoney.Text, out decimal loanAmount))
+                {
+                    decimal interest = loanAmount * 0.01m;
+                    decimal totalMoneyLone = loanAmount + interest;
+                    txtTotalMoneyLone.Text = totalMoneyLone.ToString("F2");
+                }
+                else
+                {
+                    txtTotalMoneyLone.Clear();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                txtTotalMoneyLone.Clear();
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -298,6 +302,11 @@ namespace finalprojectbanking
                     Console.WriteLine($"Loan Number: {loan.NumberLone}, Amount: {loan.LoneMoney}");
                 }
             }
+        }
+
+        private void txtTotalMoneyLone_TextChanged(object sender, EventArgs e)
+        {
+            CalculateTotalMoney();
         }
     }
 }
